@@ -2,6 +2,9 @@
 
 Por defecto tiene el shell zsh y el tema powerlevel10k con ayudas para Docker.
 
+## Introducción a Hashicorp Vagrant
+[Comandos a saber y plugins](https://amgelinux.github.io/vdlamp2022/)
+
 ## Acceso desde Virtualbox
 - Recuerda que el usuario/contraseña es vagrant/vagrant
 
