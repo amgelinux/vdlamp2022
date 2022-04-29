@@ -1,3 +1,7 @@
+layout: page
+title: "Intro"
+permalink: /intro/
+
 # Introducción a Vagrant
 
 ## Lecturas recomendadas
