@@ -1,6 +1,8 @@
-layout: page
-title: "Intro"
-permalink: /intro/
+---
+layout: default
+title: Introducción
+nav_order: 1
+---
 
 # Introducción a Vagrant
 
