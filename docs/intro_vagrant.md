@@ -1,8 +1,9 @@
 ---
 layout: default
 title: Introducción a Vagrant
-nav_order: 2
+nav_order: 8
 permalink: /intro_vagrant/
+parent: Introducción
 
 ---
 
