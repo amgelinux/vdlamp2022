@@ -2,8 +2,7 @@
 layout: default
 title: Introducción
 nav_order: 1
-permalink: /intro_vagrant/
-
+has_children: true
 ---
 
 # Introducción a Vagrant
