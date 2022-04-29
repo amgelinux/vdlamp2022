@@ -2,6 +2,8 @@
 layout: default
 title: Introducción
 nav_order: 1
+permalink: /intro_vagrant/
+
 ---
 
 # Introducción a Vagrant
