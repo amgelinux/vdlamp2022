@@ -55,3 +55,12 @@ Para trabajar con la versión 8:
 ```
 $ composer create-project --prefer-dist laravel/laravel NOMBREPROYECTO "8.*"
 ```
+
+## Servir la aplicación
+Usa un puerto distinto para cada app que vaya a estar funcionando a la vez y no olvides usar el host 0.0.0.0
+```bash
+$php artisan serve --host=0.0.0.0 --port 10000
+```
+Recuerda que esta manera de servir es para pruebas, en producción hay que configurar bien un servidor web (Apache, nginx, etc.).
+
+
