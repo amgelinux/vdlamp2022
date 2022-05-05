@@ -17,6 +17,7 @@ Usa Vagrant para desplegar la máquina virtual.
 ### Shell
 Por defecto tiene el shell zsh y el tema [powerlevel10k](https://github.com/romkatv/powerlevel10k) con ayudas para los comandos de Docker, entre otras cosas.
 Es conveniente usar una [Nerd Font](https://www.nerdfonts.com/) en el programa de consola que utilicemos para acceder por ssh a la máquina para ver todos los iconos.
+Recomendable el uso de [esta fuente](https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k).
 
 ### Virtualbox
 - Al final lo que tenemos es una máquina VirtualBox, pero recuerda que el usuario/contraseña es vagrant/vagrant y que conviene entrar mediante el Terminal de Windows. No deberíamos usar el entorno gráfico de VirtualBox.
