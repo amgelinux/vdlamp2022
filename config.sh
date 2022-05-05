@@ -60,23 +60,28 @@ apt-get -y install php libapache2-mod-php php-cli php-mysql php-xdebug
 
 echo ##############################################
 echo # Install Composer
-echo ################################################3
+echo ##############################################
 
 apt-get -y install composer
 
+echo "=============================================================="
 echo "-- Configuring xDebug (idekey = PHP_STORM) --"
+echo "Opciones para trabajar con Laravel"
+echo "Cambiar estas opciones de = no a = yes para que funcione el xdebug con PHPStorm"
+echo "=============================================================="
+
 sudo tee -a /etc/php/$PHPVER/mods-available/xdebug.ini << END
 
 xdebug.idekey=PHP_STORM
 xdebug.mode=develop,debug,trace
 xdebug.client_host=10.0.2.2
 xdebug.client_port=9003
-xdebug.scream = yes
-xdebug.show_error_trace = yes
-xdebug.show_exception_trace = yes
-xdebug.show_local_vars = yes
+xdebug.scream = no
+xdebug.show_error_trace = no
+xdebug.show_exception_trace = no
+xdebug.show_local_vars = no
 
-xdebug.start_with_request = yes
+xdebug.start_with_request = no
 
 END
 
@@ -105,7 +110,7 @@ echo "Instalando zsh y powerlevel10k"
 apt-get install -y zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-mv /root/.oh-my-zsh /home/vagrant/
+cp -r /root/.oh-my-zsh/ /home/vagrant/
 cp /vagrant/.zshrc /home/vagrant/
 cp /vagrant/.p10k.zsh /home/vagrant/
 sed -i "s/plugins=(git).*/plugins=(git docker)/" /home/vagrant/.zshrc
@@ -158,6 +163,7 @@ apt-get -y install nodejs
 apt-get -y install npm
 echo ==================================
 echo FIN DE LA INSTALACIoN
+echo Recuerda que ....
 echo USUARIO = vagrant
 echo PASS = vagrant
 echo ==================================
